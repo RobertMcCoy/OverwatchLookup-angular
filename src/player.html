@@ -1,0 +1,23 @@
+<div>
+    <h2>{{username}}</h2>
+    {{ error }}
+    <img ng-src="{{data.us.stats.competitive.overall_stats.avatar}}" title="{{username}}">
+</div>
+
+<table>
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Playtime</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr ng-repeat="arr in heroes">
+            <td>{{arr[0]}}</td>
+            <td>{{arr[1] | number}}</td>
+        </tr>
+    </tbody>
+</table>
+
+<a href="#/main">Back to search</a>
+
